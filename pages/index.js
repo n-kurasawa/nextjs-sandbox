@@ -1,25 +1,25 @@
 import Link from 'next/link'
+import styled from 'styled-components'
+
+// Create a Title component that'll render an <h1> tag with some styles
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+// Create a Wrapper component that'll render a <section> tag with some styles
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
 export default () =>
   <div>
-    <div>Welcome to next.js!</div>
+    <Wrapper>
+      <Title>
+        Hello World, this is my first styled component!
+      </Title>
+    </Wrapper>
     <Link href="/about">about</Link>
-    <p>scoped!</p>
-    <style jsx>{`
-      p {
-        color: blue;
-      }
-      div {
-        background: red;
-      }
-      @media (max-width: 600px) {
-        div {
-          background: blue;
-        }
-      }
-    `}</style>
-    <style global jsx>{`
-      body {
-        background: black;
-      }
-    `}</style>
   </div>
