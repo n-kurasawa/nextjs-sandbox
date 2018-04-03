@@ -21,5 +21,5 @@ export default () =>
         Hello World, this is my first styled component!
       </Title>
     </Wrapper>
-    <Link href="/about">about</Link>
+    <Link href="/about"><a>about</a></Link>
   </div>
