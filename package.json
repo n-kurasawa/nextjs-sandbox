@@ -1,21 +1,17 @@
 {
-  "name": "y",
+  "name": "nextjs-sandbox",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "babel-plugin-styled-components": "^1.5.1",
-    "next": "^5.1.0",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "styled-components": "^3.2.5"
-  },
-  "devDependencies": {},
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "yarn build-all",
+    "next": "yarn build-firebase && cd \"src/app\" && yarn && yarn dev",
+    "preserve": "yarn build-all",
+    "serve": "firebase serve",
+    "predeploy": "yarn build-all",
+    "deploy": "firebase deploy",
+    "build-all": "yarn build-next && yarn build-firebase",
+    "build-next": "cd \"src/app\" && yarn && yarn build",
+    "build-firebase": "cd \"src/functions\" && yarn"
   },
   "author": "",
   "license": "ISC"

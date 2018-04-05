@@ -1,3 +1,4 @@
+import React from "react"
 import Link from 'next/link'
 import styled from 'styled-components'
 
@@ -14,7 +15,7 @@ const Wrapper = styled.section`
   background: papayawhip;
 `;
 
-export default () =>
+export default () => (
   <div>
     <Wrapper>
       <Title>
@@ -23,3 +24,4 @@ export default () =>
     </Wrapper>
     <Link href="/about"><a>about</a></Link>
   </div>
+)
