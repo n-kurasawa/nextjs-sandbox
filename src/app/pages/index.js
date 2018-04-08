@@ -19,7 +19,7 @@ export default () => (
   <div>
     <Wrapper>
       <Title>
-        Hello World, this is my first styled component!
+        Hello World!
       </Title>
     </Wrapper>
     <Link href="/about"><a>about</a></Link>
