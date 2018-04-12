@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
+          <title>Next.js SSR Sample</title>
           {this.props.styleTags}
         </Head>
         <body>
