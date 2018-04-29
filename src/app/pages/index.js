@@ -2,8 +2,8 @@ import React from "react"
 import Link from 'next/link'
 import styled from 'styled-components'
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import MuiThemeProvider     from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme          from 'material-ui/styles/getMuiTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Header from '../components/header'
 
 try { injectTapEventPlugin(); } catch (e) {  }
